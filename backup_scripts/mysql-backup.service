@@ -1,0 +1,9 @@
+[Unit]
+Description=MySQL Database Backup Service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/backup_scripts/mysql_backup.sh
+
+[Install]
+WantedBy=multi-user.target

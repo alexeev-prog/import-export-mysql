@@ -1,0 +1,9 @@
+[Unit]
+Descripton=Run MySQL Backup Service Weekly
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+
+[Install]
+WantedBy=timers.target
